@@ -408,5 +408,6 @@ function rnn_control!(rnn::RNN_t, input::Vector{Float64})
   end
   return r
 end
+control!(rnn::RNN_t, input::Vector{Float64}) = rnn_control!(rnn, input)
 
 end # module
